@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Article1({ title, author, date, content, authorImageUrl, authorBio }) {
+function Article1({ title, author, date, content, authorImageUrl, authorBio, hashtags, relatedArticles }) {
   return (
     <article className="max-w-2xl px-6 py-24 mx-auto space-y-12">
 	<div className="w-full mx-auto space-y-4 text-center">
@@ -17,7 +17,7 @@ function Article1({ title, author, date, content, authorImageUrl, authorBio }) {
 	</div>
 	<div className="pt-12 border-t dark:border-gray-300">
 		<div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
-			<img src="https://source.unsplash.com/75x75/?portrait" alt="" className="self-center flex-shrink-0 w-24 h-24 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-300" />
+			<img src={authorImageUrl} alt="" className="self-center flex-shrink-0 w-24 h-24 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-300" />
 			<div className="flex flex-col">
 				<h4 className="text-lg font-semibold">{author}</h4>
 				<p className="dark:text-gray-600">{authorBio}</p>
@@ -39,6 +39,29 @@ function Article1({ title, author, date, content, authorImageUrl, authorBio }) {
 					<path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
 				</svg>
 			</a>
+		</div>
+	</div>
+    <div>
+		<div className="flex flex-wrap py-6 gap-2 dark:border-gray-600">
+            {hashtags && hashtags.map((hashtag, index) => (
+                <a key={index} href={hashtag.url} className="px-3 py-1 rounded-sm hover:underline dark:text-gray-800">
+                {hashtag.tag}
+                </a>
+            ))}
+			
+		</div>
+		<div className="space-y-2">
+			<h4 className="text-lg font-semibold">Related posts</h4>
+			<ul className="ml-4 space-y-1 list-disc">
+                {relatedArticles && relatedArticles.map((relatedArticles, index) => (
+                    <li>
+                        <a key={index} href={relatedArticles.url} className="hover:underline">
+                        {relatedArticles.tag}
+                        </a>
+                    </li>    
+                ))}
+				
+			</ul>
 		</div>
 	</div>
 </article>
