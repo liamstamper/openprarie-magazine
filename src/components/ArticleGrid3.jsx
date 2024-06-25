@@ -1,8 +1,20 @@
 import React from "react";
 
-function ArticleGrid3({ titles, images, dates, authors, contents }) {
+function ArticleGrid3({
+  sectionTitle,
+  sectionSubtitle,
+  titles,
+  images,
+  dates,
+  authors,
+  contents,
+}) {
   return (
-    <section className="text-gray-800 pt-10">
+    <section className="pt-10">
+      <div className="space-y-2 text-center">
+        <h2 className="text-3xl font-bold">{sectionTitle}</h2>
+        <p className="font-serif text-sm text-gray-600">{sectionSubtitle}</p>
+      </div>
       <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
         <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           <a
