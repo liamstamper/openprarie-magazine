@@ -37,7 +37,7 @@ const Header = () => {
           rel="noopener noreferrer"
           href="#"
           aria-label="Back to homepage"
-          className="flex items-center p-2 font-semibold"
+          className="flex items-center p-2 font-bold"
         >
           Digital Magazine
         </a>
