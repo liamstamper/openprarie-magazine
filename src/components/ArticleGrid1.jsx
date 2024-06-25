@@ -13,9 +13,7 @@ function ArticleGrid1({
       <div className="container p-6 mx-auto space-y-8">
         <div className="space-y-2 text-center">
           <h2 className="text-3xl font-bold">{sectionTitle}</h2>
-          <p className="font-serif text-sm dark:text-gray-600">
-            {sectionSubtitle}
-          </p>
+          <p className="font-serif text-sm text-gray-600">{sectionSubtitle}</p>
         </div>
         <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
           <article className="flex flex-col border-solid border border-grey-50">
@@ -26,7 +24,7 @@ function ArticleGrid1({
             >
               <img
                 alt=""
-                className="object-cover w-full h-52 dark:bg-gray-500"
+                className="object-cover w-full h-52 bg-gray-300"
                 src={images[0]}
               />
             </a>
@@ -46,7 +44,7 @@ function ArticleGrid1({
               >
                 By {authors[0]}
               </div>
-              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-600">
                 <span>{dates[0]}</span>
               </div>
             </div>
@@ -59,7 +57,7 @@ function ArticleGrid1({
             >
               <img
                 alt=""
-                className="object-cover w-full h-52 dark:bg-gray-500"
+                className="object-cover w-full h-52 bg-gray-300"
                 src={images[1]}
               />
             </a>
@@ -79,7 +77,7 @@ function ArticleGrid1({
               >
                 By {authors[1]}
               </div>
-              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-600">
                 <span>{dates[1]}</span>
               </div>
             </div>
@@ -92,7 +90,7 @@ function ArticleGrid1({
             >
               <img
                 alt=""
-                className="object-cover w-full h-52 dark:bg-gray-500"
+                className="object-cover w-full h-52 bg-gray-300"
                 src={images[2]}
               />
             </a>
@@ -112,7 +110,7 @@ function ArticleGrid1({
               >
                 By {authors[2]}
               </div>
-              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-600">
                 <span>{dates[2]}</span>
               </div>
             </div>
@@ -125,7 +123,7 @@ function ArticleGrid1({
             >
               <img
                 alt=""
-                className="object-cover w-full h-52 dark:bg-gray-500"
+                className="object-cover w-full h-52 bg-gray-300"
                 src={images[3]}
               />
             </a>
@@ -145,7 +143,7 @@ function ArticleGrid1({
               >
                 By {authors[3]}
               </div>
-              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+              <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs text-gray-600">
                 <span>{dates[3]}</span>
               </div>
             </div>
