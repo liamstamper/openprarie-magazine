@@ -42,7 +42,7 @@ function ArticleGrid1({
               <div
                 rel="noopener noreferrer"
                 href="#"
-                className="text-xs tracking-wider font-semibold"
+                className="text-xs tracking-wider font-semibold text-blue-500"
               >
                 By {authors[0]}
               </div>
@@ -75,7 +75,7 @@ function ArticleGrid1({
               <div
                 rel="noopener noreferrer"
                 href="#"
-                className="text-xs tracking-wider font-semibold"
+                className="text-xs tracking-wider font-semibold text-blue-500"
               >
                 By {authors[1]}
               </div>
@@ -108,7 +108,7 @@ function ArticleGrid1({
               <div
                 rel="noopener noreferrer"
                 href="#"
-                className="text-xs tracking-wider font-semibold"
+                className="text-xs tracking-wider font-semibold text-blue-500"
               >
                 By {authors[2]}
               </div>
@@ -141,7 +141,7 @@ function ArticleGrid1({
               <div
                 rel="noopener noreferrer"
                 href="#"
-                className="text-xs tracking-wider font-semibold"
+                className="text-xs tracking-wider font-semibold text-blue-500"
               >
                 By {authors[3]}
               </div>
