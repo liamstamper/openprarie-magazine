@@ -20,9 +20,9 @@ function ArticleGrid2({ title, image, author, date, content, link }) {
               By {author}
             </div>
             <div>
-              {content}
-              <span className="font-bold hover:underline">
-                &nbsp;Continue Reading &gt;
+              {content} &nbsp;&nbsp;
+              <span className="font-bold text-s hover:underline">
+                Continue Reading <span className="text-xs">&gt;&gt;</span>
               </span>
             </div>
 
