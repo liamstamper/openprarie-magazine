@@ -28,7 +28,7 @@ function Article2({
             href="#"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:underline dark:text-violet-600"
+            className="hover:underline dark:text-blue-400"
           >
             <span>&ensp; {author} &ensp;</span>
           </a>
