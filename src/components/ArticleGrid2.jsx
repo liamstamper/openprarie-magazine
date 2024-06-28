@@ -3,7 +3,7 @@ import React from "react";
 function ArticleGrid2({ title, image, author, date, content, link }) {
   return (
     <section className="py-6">
-      <div className="container max-w-6xl p-6 pt-10 mx-auto space-y-6 sm:space-y-12">
+      <div className="container max-w-8xl p-6 pt-10 mx-auto space-y-6 sm:space-y-12">
         <a
           rel="noopener noreferrer"
           href={link}
