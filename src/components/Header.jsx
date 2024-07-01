@@ -1,50 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="bg-white sticky top-0 border-solid border-b border-grey-50">
       <div className="container flex justify-between h-13 mx-auto">
-        <ul className="items-stretch hidden space-x-3 lg:flex">
+        <ul
+          className={`items-stretch space-x-3 lg:flex ${
+            isMenuOpen ? "flex" : "hidden"
+          }`}
+        >
           <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
+            <Link
+              to="/section/fiction"
               className="text-xs flex items-center font-semibold hover:underline px-4 -mb-1"
             >
-              Link
-            </a>
+              Fiction
+            </Link>
           </li>
           <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
+            <Link
+              to="/section/poetry"
               className="text-xs flex items-center font-semibold hover:underline px-4 -mb-1"
             >
-              Link
-            </a>
+              Poetry
+            </Link>
           </li>
           <li className="flex">
-            <a
-              rel="noopener noreferrer"
-              href="#"
+            <Link
+              to="/section/nonfiction"
               className="text-xs flex items-center font-semibold hover:underline px-4 -mb-1"
             >
-              Link
-            </a>
+              Nonfiction
+            </Link>
           </li>
         </ul>
-        <a
-          rel="noopener noreferrer"
-          href="#"
-          aria-label="Back to homepage"
-          className="flex items-center p-2 font-bold"
-        >
+        <Link to="/" className="flex items-center p-2 font-bold">
           Digital Magazine
-        </a>
+        </Link>
         <div className="lg:flex items-center hidden md:space-x-4">
           <li className="flex">
             <a
-              rel="noopener noreferrer"
               href="#"
               className="text-xs flex items-center font-semibold hover:underline px-4 -mb-1"
             >
@@ -54,7 +56,7 @@ const Header = () => {
           <li className="flex">
             <button
               type="button"
-              className="hidden px-6 py-1 text-xs lg:block  bg-blue-500 text-white"
+              className="hidden px-6 py-1 text-xs lg:block bg-blue-500 text-white"
             >
               Log in
             </button>
@@ -71,7 +73,12 @@ const Header = () => {
             </a>
           </li>
         </div>
-        <button title="Open menu" type="button" className="p-4 lg:hidden">
+        <button
+          title="Open menu"
+          type="button"
+          className="p-4 lg:hidden"
+          onClick={toggleMenu}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
