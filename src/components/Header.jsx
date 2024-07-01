@@ -46,19 +46,19 @@ const Header = () => {
         </Link>
         <div className="lg:flex items-center hidden md:space-x-4">
           <li className="flex">
-            <a
-              href="#"
+            <Link
+              to="/submissions"
               className="text-xs flex items-center font-semibold hover:underline px-4 -mb-1"
             >
-              Link
-            </a>
+              Submissions
+            </Link>
           </li>
           <li className="flex">
             <button
               type="button"
               className="hidden px-6 py-1 text-xs lg:block bg-blue-500 text-white"
             >
-              Log in
+              <Link to="/newsletter">Newsletter</Link>
             </button>
           </li>
           <li className="flex">
