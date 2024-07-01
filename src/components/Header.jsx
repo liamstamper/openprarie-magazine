@@ -18,26 +18,26 @@ const Header = () => {
         >
           <li className="flex">
             <Link
-              to="/section/fiction"
+              to="/section/Nonfiction and Fiction"
               className="text-xs flex items-center font-semibold hover:underline px-4 -mb-1"
             >
-              Fiction
+              Nonfiction & Fiction
             </Link>
           </li>
           <li className="flex">
             <Link
-              to="/section/poetry"
+              to="/section/Flash"
               className="text-xs flex items-center font-semibold hover:underline px-4 -mb-1"
             >
-              Poetry
+              Flash
             </Link>
           </li>
           <li className="flex">
             <Link
-              to="/section/nonfiction"
+              to="/section/Poetry and Experimental"
               className="text-xs flex items-center font-semibold hover:underline px-4 -mb-1"
             >
-              Nonfiction
+              Poetry & Experimental
             </Link>
           </li>
         </ul>
