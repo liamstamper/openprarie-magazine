@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Submit from "./components/Submit";
 import About from "./components/About";
 import Newsletter from "./components/Newsletter";
+import Article1 from "./components/Article1";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/section/:sectionId" element={<SectionPage />} />
         <Route path="/submissions" element={<Submit />} />
         <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/article/:id" element={<Article1 />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
