@@ -9,14 +9,7 @@ import ArticlesData from "./components/ArticlesData";
 const HomePage = () => {
   return (
     <div>
-      <ArticleGrid2
-        title="Ei delenit sensibus liberavisse pri. Est in graece fuisset, eos affert putent doctus id."
-        date="February 19, 2021"
-        image="null"
-        author="Henry Romain"
-        content="Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est i Ei delenit sensibus liberavisse pri. Quod suscipit no nam.Est i Ei delenit sensibus liberavisse pri. Quod suscipit no nam."
-        link="null"
-      />
+      <ArticleGrid2 articles={ArticlesData.slice(4, 5)} />
       <ArticleGrid1
         articles={ArticlesData.slice(0, 4)}
         sectionTitle="Featured Articles"
