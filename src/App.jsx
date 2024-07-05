@@ -19,7 +19,7 @@ function App() {
         <Route path="/section/:sectionId" element={<SectionPage />} />
         <Route path="/submissions" element={<Submit />} />
         <Route path="/newsletter" element={<Newsletter />} />
-        <Route path="/article/:id" element={<Article1 />} />
+        <Route path="/article1/:id" element={<Article1 />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

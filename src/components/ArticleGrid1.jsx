@@ -15,7 +15,7 @@ function ArticleGrid1({ articles, sectionTitle, sectionSubtitle }) {
               key={index}
               className="flex flex-col border-solid border border-grey-50"
             >
-              <Link to={`/article/${article.id}`}>
+              <Link to={`/article1/${article.id}`}>
                 <img
                   className="object-cover w-full h-52 bg-gray-300"
                   src={article.imageUrl}
@@ -23,7 +23,7 @@ function ArticleGrid1({ articles, sectionTitle, sectionSubtitle }) {
               </Link>
               <div className="flex flex-col flex-1 p-6">
                 <Link
-                  to={`/article/${article.id}`}
+                  to={`/article1/${article.id}`}
                   className="flex-1 py-2 text-lg font-semibold hover:underline leading-snug"
                 >
                   {article.title}
