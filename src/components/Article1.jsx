@@ -71,18 +71,24 @@ function Article1() {
             </a>
           ))}
         </div>
-        <div className="space-y-2">
-          <h4 className="text-lg font-semibold">Related posts</h4>
-          <ul className="ml-4 space-y-1 list-disc">
-            {relatedArticles.map((related, index) => (
-              <li key={index}>
-                <a href="#" className="hover:underline">
-                  {related.tag}
-                </a>{" "}
-              </li>
-            ))}
-          </ul>
-        </div>
+
+        {relatedArticles &&
+          relatedArticles.map((relatedArticles, index) => (
+            <div className="space-y-2">
+              <h4 className="text-lg font-semibold">Related Articles</h4>
+              <ul className="ml-4 space-y-1 list-disc">
+                <li>
+                  <a
+                    key={index}
+                    href={relatedArticles.url}
+                    className="hover:underline"
+                  >
+                    {relatedArticles.tag}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          ))}
       </div>
     </article>
   );
