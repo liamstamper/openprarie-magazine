@@ -10,7 +10,7 @@ const Submit = () => {
           Submissions
         </h1>
         <div className="mt-6 text-lg text-gray-800">
-          <p className="mb-4">
+          <p className="mb-4 font-bold">
             We're thrilled that you're interested in contributing to our
             magazine! Please submit your story as a PDF attachment to{" "}
             <a
@@ -22,7 +22,6 @@ const Submit = () => {
             .
           </p>
 
-          <h2 className="text-3xl font-bold mt-5">Submission Guidelines</h2>
           <ul className="mt-4 text-left space-y-2">
             <li>
               <strong>Format:</strong> Attach your story as a PDF. Ensure your
@@ -39,7 +38,7 @@ const Submit = () => {
               short synopsis of your submission.
             </li>
           </ul>
-          <h2 className="text-3xl font-bold mt-5">What Happens Next</h2>
+
           <p className="mt-2">
             We read every submission with great care and interest. If your piece
             resonates with our editorial team, we'll reach out within 30 days to
