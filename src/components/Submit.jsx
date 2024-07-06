@@ -5,9 +5,7 @@ const Submit = () => {
 
   return (
     <section className="container mx-auto flex flex-col items-center px-4 text-center md:py-10 md:px-10 lg:px-32 xl:max-w-5xl text-gray-800">
-      <h1 className="text-4xl font-bold leading-none sm:text-5xl">
-        Submissions
-      </h1>
+      <h2 className="text-3xl font-bold">Submissions</h2>
       <div className="mt-6 text-lg">
         <p className="mb-4">
           We're thrilled that you're interested in contributing to our magazine!
