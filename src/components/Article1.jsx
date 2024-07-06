@@ -49,8 +49,10 @@ function Article1() {
             className="self-center flex-shrink-0 w-24 h-24 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-300"
           />
           <div className="flex flex-col">
-            <h4 className="text-lg font-semibold">{author}</h4>
-            <p className="dark:text-gray-600">{authorBio}</p>
+            <p className="dark:text-gray-600">
+              <span className="font-bold text-black">{author} </span>{" "}
+              {authorBio}
+            </p>
           </div>
         </div>
         <div className="flex justify-center pt-4 space-x-4 align-center">
