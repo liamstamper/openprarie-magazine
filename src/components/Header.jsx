@@ -52,23 +52,23 @@ const Header = () => {
           <ul className="flex flex-col lg:flex-row items-center justify-between min-h-[250px] lg:min-h-0">
             <li className="my-8 lg:my-0 ">
               <Link
-                to="/about"
+                to="/section/Fiction and Non-Fiction"
                 className="block py-2 text-center text-sm font-semibold lg:inline-block lg:p-4 hover:text-blue-500"
               >
-                Fiction & Nonfiction
+                Fiction & Non-Fiction
               </Link>
             </li>
             <li className="my-8 lg:my-0">
               <Link
-                to="/portfolio"
+                to="/section/Flash Fiction"
                 className="block py-2 text-center text-sm font-semibold lg:inline-block lg:p-4 hover:text-blue-500"
               >
-                Flash
+                Flash Fiction
               </Link>
             </li>
             <li className="my-8 font-semibold lg:my-0">
               <Link
-                to="/contact"
+                to="/section/Poetry and Experimental"
                 className="block py-2 text-center text-sm lg:inline-block lg:p-4 hover:text-blue-500"
               >
                 Poetry & Experimental
