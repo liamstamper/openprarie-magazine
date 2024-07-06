@@ -60,17 +60,18 @@ function Article1() {
         </div>
       </div>
       <div>
-        <div className="flex flex-wrap py-6 gap-2 dark:border-gray-600">
-          {hashtags.map((hashtag, index) => (
-            <a
-              key={index}
-              href="#"
-              className="px-3 py-1 rounded-sm hover:underline dark:text-gray-800"
-            >
-              {hashtag.tag}
-            </a>
+        {hashtags &&
+          hashtags.map((hashtag, index) => (
+            <div className="flex flex-wrap py-6 gap-2 dark:border-gray-600">
+              <a
+                key={index}
+                href="#"
+                className="px-3 py-1 rounded-sm hover:underline dark:text-gray-800"
+              >
+                {hashtag.tag}
+              </a>
+            </div>
           ))}
-        </div>
 
         {relatedArticles &&
           relatedArticles.map((relatedArticles, index) => (
