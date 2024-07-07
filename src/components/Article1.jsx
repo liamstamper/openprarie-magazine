@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import articles from "./ArticlesData";
 
 function Article1() {
   const { id } = useParams();
   const article = articles.find((article) => article.id === id);
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   if (!article) {
     return <div>Article not found!</div>;
   }
