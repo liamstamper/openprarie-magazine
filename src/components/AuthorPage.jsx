@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import ArticleGrid1 from "./ArticleGrid1";
 import ArticlesData from "./ArticlesData";
 
-function SectionPage() {
+function AuthorPage() {
   const { sectionId } = useParams();
   return (
     <section className="text-gray-800">
@@ -19,4 +19,4 @@ function SectionPage() {
   );
 }
 
-export default SectionPage;
+export default AuthorPage;

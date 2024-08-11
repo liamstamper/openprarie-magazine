@@ -11,7 +11,10 @@ const Header = () => {
   return (
     <header className="bg-slate-50 sticky top-0 border-b border-gray-200">
       <div className="container flex justify-between items-center h-13 mx-auto px-4">
-        <Link to="/" className="flex items-center text-lg p-2 font-bold">
+        <Link
+          to="/"
+          className="flex items-center text-lg p-2 font-bold tracking-wide uppercase"
+        >
           Digital Magazine
         </Link>
         <button

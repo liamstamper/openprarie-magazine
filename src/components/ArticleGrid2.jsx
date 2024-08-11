@@ -26,7 +26,7 @@ function ArticleGrid2({ articles }) {
               <div>
                 {article.summary} {}
                 <span className="font-bold text-s hover:underline">
-                  Continue Reading <span className="text-xs">&gt;&gt;</span>
+                  Continue Reading <span className="text-xs">&gt;</span>
                 </span>
               </div>
               <div className="text-xs text-gray-600">{article.date}</div>

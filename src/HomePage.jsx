@@ -8,7 +8,7 @@ import ArticlesData from "./components/ArticlesData";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="bg-slate-50">
       <ArticleGrid2 articles={ArticlesData.slice(4, 5)} />
       <ArticleGrid1
         articles={ArticlesData.slice(0, 4)}
