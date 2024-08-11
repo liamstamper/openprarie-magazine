@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import articles from "./ArticlesData";
@@ -46,10 +47,12 @@ function Article1() {
       </div>
       <div className="pt-12 border-t dark:border-gray-300">
         <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
-          <img
-            src={authorImageUrl}
-            className="self-center flex-shrink-0 w-24 h-24 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-300"
-          />
+          {authorImageUrl && (
+            <img
+              src={authorImageUrl}
+              className="self-center flex-shrink-0 w-24 h-24 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-300"
+            />
+          )}
           <div className="flex flex-col">
             <p className="dark:text-gray-600">
               <span className="font-bold text-black">{author} </span>{" "}
