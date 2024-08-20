@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-key */
 import React from "react";
 
 function Article2({
@@ -33,7 +36,7 @@ function Article2({
             <span>&ensp; {author} &ensp;</span>
           </a>
           on
-          <time datetime="2021-02-12 15:34:18-0200">{date}</time>
+          <time dateTime="2021-02-12 15:34:18-0200">{date}</time>
         </p>
       </div>
       <div className="dark:text-gray-800">
