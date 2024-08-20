@@ -4,23 +4,21 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className=" text-gray-900">
-      <div className="container fixed bottom-0 flex flex-col p-4 mx-auto md:p-8 lg:flex-row divide-gray-600">
-        <ul className="self-center py-4 space-y-4 text-center sm:flex sm:space-y-0 sm:space-x-4 lg:flex-1 lg:justify-start">
-          <li className="mb-2 sm:mb-0 sm:mr-4">
-            <Link className="font-semibold text-xs hover:underline" to="/about">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="font-semibold text-xs hover:underline"
-              to="/contact"
-            >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
+    <footer className="bg-white text-gray-900">
+      <div className="container mx-auto p-4 md:p-8 lg:p-10">
+        <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center divide-gray-600">
+          <ul className="space-y-4 text-center lg:text-left lg:space-y-0 lg:flex lg:space-x-4">
+            <li>
+              <Link className="font-semibold text-xs hover:underline" to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="font-semibold text-xs hover:underline" to="/contact">
+                Contact Us
+              </Link>
+            </li>
+          </ul>
         {/*
         <div className="items-right pt-6 lg:pt-0">
           <div className="flex justify-right space-x-4">
@@ -73,6 +71,7 @@ const Footer = () => {
           </div>
         </div>
         */}
+        </div>
       </div>
     </footer>
   );
