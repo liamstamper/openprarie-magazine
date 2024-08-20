@@ -5,7 +5,7 @@ export const ArticlesData = [
     title: "Coda",
     author: "Henry Romain",
     date: "July 1, 2024",
-    imageUrl: "public/images/coda.jpeg",
+    imageUrl: "/images/coda.jpeg",
     content: `
       Landfills burned. Kittens cried. \n
       The atmosphere was black. Leaving  
@@ -48,7 +48,7 @@ export const ArticlesData = [
     title: "THE BALLAD OF A YOUNG MACKEREL",
     author: "Dan Groeneveld",
     date: "July 31, 2024",
-    imageUrl: "public/images/devil.jpeg",
+    imageUrl: "/images/devil.jpeg",
     content: `
     Rain murmured on the surface of the sea. A few feet below, mackerel eggs floated in amorphous clumps and rose when swells churned the water. One egg reached the surface and, struck by a drop of rain, burst, freeing the larvae. All around him were spherical eggs, almost identical, save for the different ways the dark shape inside could be coiled. The spheres rolled and pushed against him, impeding his progress. 
     A clump broke apart and the young mackerel wriggled free. Suddenly, he felt beside him other small, slick bodies. He followed them. Though they were only pairs of lenses propelled by a trailing filament, some instinct kept them together as they moved in wonder among the spheres that would unfurl and add to their numbers.
@@ -75,7 +75,7 @@ export const ArticlesData = [
     title: "Tableau From an Outcropping, Yosemite Pt., 6,939 ft., Midday",
     author: "Henry Romain",
     date: "June 25th, 2024",
-    imageUrl: "public/images/rock.jpeg",
+    imageUrl: "/images/rock.jpeg",
     content: `At the horizon,
     The plush round clouds behind the serrated mountain range look like rolling snow-capped hills.
     I, immobilized in exegesis, look.
@@ -182,7 +182,7 @@ export const ArticlesData = [
     title: "Leslie",
     author: "Will Tyler",
     date: "July 7, 2024",
-    imageUrl: "public/images/leslie.png",
+    imageUrl: "/images/leslie.png",
     summary:
       "I told her “I felt clarity when talking to Scott, and realized later when talking to a friend that I wasn’t remembering anything they were saying”",
     content:
