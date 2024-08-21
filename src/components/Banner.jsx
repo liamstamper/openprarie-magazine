@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 const Banner = () => {
+  const location = useLocation();
+
+  if (location.pathname === "/jobapplication") {
+    return null;
+  }
   return (
     <div className="px-8 py-2 bg-gray-100 text-gray-800">
       <div className="flex items-center mx-auto container justify-center md:justify-between py-2">
