@@ -16,7 +16,7 @@ const Header = () => {
           to="/"
           className="flex items-center text-2xl p-2 font-extrabold tracking-wide uppercase"
         >
-          Open Prarie Magazine
+          Open Prairie Magazine
         </Link>
         <button
           title="Open menu"
