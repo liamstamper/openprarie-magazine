@@ -89,7 +89,7 @@ const Header = () => {
           </Link>
           <Link
             to="/newsletter"
-            className="px-6 py-1 bg-blue-600 text-white font-semibold hover:bg-blue-500 text-sm"
+            className="px-6 py-1 bg-blue-500 text-white font-semibold hover:bg-blue-600 rounded-[7px] text-sm"
           >
             Newsletter
           </Link>
