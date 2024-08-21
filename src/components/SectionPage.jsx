@@ -8,7 +8,7 @@ function SectionPage() {
   return (
     <section className="text-gray-800">
       <div className="container mx-auto flex flex-col items-center px-4 text-center md:py-10 md:px-10 lg:px-32 xl:max-w-3xl">
-        <h2 className="text-3xl font-bold">{sectionId} Section</h2>
+        <h2 className="text-4xl font-bold">{sectionId} Section</h2>
       </div>
       <ArticleGrid1
         articles={ArticlesData.filter(
