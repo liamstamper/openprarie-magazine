@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -89,7 +88,7 @@ const Header = () => {
           </Link>
           <Link
             to="/newsletter"
-            className="px-6 py-1 bg-blue-500 text-white font-semibold hover:bg-blue-600 rounded-[7px] text-sm"
+            className="px-6 py-1 bg-blue-500 text-white font-semibold hover:bg-blue-600 rounded-[5px] text-sm"
           >
             Newsletter
           </Link>
