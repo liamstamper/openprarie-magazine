@@ -10,11 +10,11 @@ import Newsletter from "./components/Newsletter";
 import Article1 from "./components/Article1";
 import Banner from "./components/Banner";
 import JobApplication from "./components/JobApplicationForm";
+import JobLandingPage from "./components/JobLandingPage";
 
 function App() {
   return (
     <Router>
-      <Banner />
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -24,6 +24,7 @@ function App() {
         <Route path="/article1/:id" element={<Article1 />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/joblandingpage" element={<JobLandingPage />} />
         <Route path="/jobapplication" element={<JobApplication />} />
       </Routes>
       <Footer />
